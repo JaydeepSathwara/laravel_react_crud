@@ -28,7 +28,7 @@ export default function Edit(props) {
     }
 
     const submitForm = () =>{
-        http.put('/users/'+id,inputs).then((res)=>{
+        http.put('/users_update/'+id,inputs).then((res)=>{
             navigate('/');
         })
     }
